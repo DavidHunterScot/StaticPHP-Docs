@@ -30,6 +30,12 @@ body
     background-color: var( --color-background-sidebar );
 }
 
+.container > .sidebar a
+{
+    color: var( --color-text );
+    text-decoration: none;
+}
+
 .container > .sidebar h1
 {
     margin: 0;
@@ -46,9 +52,12 @@ body
 .container > .sidebar nav a
 {
     padding: 0.5rem 2rem;
-    color: var( --color-text );
-    text-decoration: none;
     font-size: 0.9rem;
+}
+
+.container > .sidebar nav a.current
+{
+    font-weight: 600;
 }
 
 .container > .sidebar nav a.current,
@@ -88,4 +97,6 @@ body
     padding: 1rem;
     overflow-x: auto;
     max-width: 100%;
+    line-height: 1.0;
+    font-size: 0.8rem;
 }

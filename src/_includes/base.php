@@ -15,10 +15,11 @@ content_placeholder: {{ content }}
     <body>
         <div class="container">
             <div class="sidebar">
-                <h1>StaticPHP Docs</h1>
+                <h1><a href="/">StaticPHP Docs</a></h1>
 
                 <nav>
                     <a href="/getting-started"<?php if( isset( $metadata['current_nav_item'] ) && $metadata['current_nav_item'] == "getting-started" ) echo ' class="current"'; ?>>Getting Started</a>
+                    <a href="/metadata"<?php if( isset( $metadata['current_nav_item'] ) && $metadata['current_nav_item'] == "metadata" ) echo ' class="current"'; ?>>MetaData</a>
                 </nav>
             </div>
 
