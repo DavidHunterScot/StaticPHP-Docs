@@ -41,6 +41,9 @@ body
     margin: 0;
     padding: 2rem;
     font-size: 1.4rem;
+    text-decoration: underline;
+    text-underline-offset: 12px;
+    text-decoration-color: var( --color-line );
 }
 
 .container > .sidebar nav
@@ -99,4 +102,15 @@ body
     max-width: 100%;
     line-height: 1.0;
     font-size: 0.8rem;
+}
+
+.container > .content .footer
+{
+    color: var( --color-line );
+    font-size: 0.8rem;
+    border-top: 1px solid var( --color-line );
+    padding: 1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    text-align: center;
 }
