@@ -17,6 +17,13 @@ body
     font-size: 18px;
 }
 
+a[ target="_blank" ]:after
+{
+    content: "⧉";
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
 .container
 {
     display: flex;
@@ -84,7 +91,8 @@ body
 
 .container > .content a
 {
-    color: var( --color-line );
+    color: var( --color-text );
+    font-weight: bold;
 }
 
 .container > .content h2,
@@ -113,4 +121,9 @@ body
     margin-left: -1rem;
     margin-right: -1rem;
     text-align: center;
+}
+
+.container > .content .footer a
+{
+    color: var( --color-line );
 }
