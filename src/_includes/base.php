@@ -17,9 +17,42 @@ content_placeholder: {{ content }}
             <div class="sidebar">
                 <h1><a href="/">StaticPHP Docs</a></h1>
 
+                <?php
+
+                $navitems[] = array
+                (
+                    "id" => "getting-started",
+                    "url" => "/getting-started",
+                    "text" => "Getting Started"
+                );
+
+                $navitems[] = array
+                (
+                    "id" => "metadata",
+                    "url" => "/metadata",
+                    "text" => "MetaData"
+                );
+
+                $navitems[] = array
+                (
+                    "id" => "php-files",
+                    "url" => "/php-files",
+                    "text" => "PHP Files"
+                );
+
+                $navitems[] = array
+                (
+                    "id" => "html-files",
+                    "url" => "/html-files",
+                    "text" => "HTML Files"
+                );
+
+                ?>
+
                 <nav>
-                    <a href="/getting-started"<?php if( isset( $metadata['current_nav_item'] ) && $metadata['current_nav_item'] == "getting-started" ) echo ' class="current"'; ?>>Getting Started</a>
-                    <a href="/metadata"<?php if( isset( $metadata['current_nav_item'] ) && $metadata['current_nav_item'] == "metadata" ) echo ' class="current"'; ?>>MetaData</a>
+                    <?php foreach( $navitems as $navitem ): ?>
+                        <a href="<?php echo $navitem['url']; ?>"<?php if( isset( $metadata['current_nav_item'] ) && $metadata['current_nav_item'] == $navitem['id'] ) echo ' class="current"'; ?>><?php echo $navitem['text']; ?></a>
+                    <?php endforeach; ?>
                 </nav>
             </div>
 
