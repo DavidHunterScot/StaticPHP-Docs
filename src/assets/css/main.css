@@ -104,12 +104,23 @@ a[ target="_blank" ]:after
 
 .container > .content pre
 {
-    background-color: var( --color-background-sidebar );
     padding: 1rem;
     overflow-x: auto;
     max-width: 100%;
-    line-height: 1.0;
+}
+
+.container > .content pre,
+.container > .content code
+{
+    background-color: var( --color-background-sidebar );
     font-size: 0.8rem;
+    line-height: 1.0;
+    border-radius: 0.5rem;
+}
+
+.container > .content code
+{
+    padding: 0.3rem 0.5rem;
 }
 
 .container > .content .footer

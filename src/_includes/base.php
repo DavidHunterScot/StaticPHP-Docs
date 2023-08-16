@@ -47,6 +47,13 @@ content_placeholder: {{ content }}
                     "text" => "HTML Files"
                 );
 
+                $navitems[] = array
+                (
+                    "id" => "functional-blocks",
+                    "url" => "/functional-blocks",
+                    "text" => "Functional Blocks"
+                );
+
                 ?>
 
                 <nav>
