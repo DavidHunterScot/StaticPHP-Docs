@@ -42,6 +42,18 @@ layout: src/_includes/base.php
 
 <p>Please refer to the page on <a href="/metadata">MetaData</a> to learn more about setting MetaData in files and how to use placeholders.</p>
 
+<h4>Sorting Order</h4>
+
+<p>By default, items will be sorted however the filesystem sorts them, which is usually ascending order. You can specify the sort order by setting the <code>sort</code> parameter to either <code>ascending</code> or <code>descending</code>.</p>
+
+<h5>Example of Sort using Dir</h5>
+
+<pre>--- loop( dir = "src/items", sort = "descending" ) ---
+
+&lt;p&gt;&lt;b&gt;Item Name:&lt;/b&gt; --- loop.item-name ---&lt;/p&gt;
+
+--- endloop ---</pre>
+
 <h4>Outputting JSON</h4>
 
 <p>This feature is useful if you want to make the results of the loop available as a JSON file.</p>
