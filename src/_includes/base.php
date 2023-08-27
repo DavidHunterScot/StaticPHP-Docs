@@ -68,7 +68,7 @@ content_placeholder: {{ content }}
 
                 <div class="footer">
                     <p>Site built and deployed using <a href="https://github.com/DavidHunterScot/StaticPHP-Docs" target="_blank">source code on GitHub</a>.</p>
-                    <p><a href="https://staticphp.io" target="_blank">StaticPHP Website</a></p>
+                    <p><a href="https://www.staticphp.ict.rocks/" target="_blank">StaticPHP Website</a></p>
                 </div>
             </div>
         </div>
